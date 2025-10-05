@@ -36,7 +36,7 @@ Relato: A 1° coisa que eu fiz ao iniciar a máquina do tryhackme(Hack-the-box) 
 6- A Flag estava numa query TXT (onde os ADMs do DNS fazem comentários em texto puro entre si)
 Flag: "flag{0767ccd06e79853318f25aeb08ff83e2}".
 
-Aprendizado: sempre estude a base antes de focar em algo mais técnico (CTFs). Eu fiz isso e o resulto ficou claro, um CTF que no passado eu nem conseguia fazer terminado em menos de 5 minutos e com somente 2 linhas de comandos.
+Aprendizado: sempre estude a base antes de focar em algo mais técnico (CTFs). Eu fiz isso e o resulto ficou claro: Um CTF que no passado eu nem conseguia fazer terminado em menos de 5 minutos e com somente 2 linhas de comandos.
 
 Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples se souber a base, e divertido quando se completa).
 
