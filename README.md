@@ -42,6 +42,7 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
 
 ## 07/10/25
  Estudo: "DIG" e "WHOIS"
+ 
  Objetivo: Apreder recon passivo(sem contato direto com o alvo, só informações públicas).
 
  Relato: Usei o whois paara ver informações do site do Tryhackme.com. 
