@@ -40,4 +40,19 @@ Aprendizado: sempre estude a base antes de focar em algo mais técnico (CTFs). E
 
 Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples se souber a base, e divertido quando se completa).
 
+## 07/10/25
+ Estudo: "DIG" e "WHOIS"
+ Objetivo: Apreder recon passivo(sem contato direto com o alvo, só informações públicas).
+
+ Relato: Usei o whois paara ver informações do site do Tryhackme.com. 
+ no começo, eu tive muita dificuldade por conta das perguntas estarem em inglês(a tradução automática não é muito boa), mas mesmo assim, eu consegui       aprender um pouco sobre o que usar da saída do "whois" (criação, servidor NS, registro/compradores do domínio etc).
+ 
+ Recon Passivo: A ordem que eu vou usar daqui pra frente nesses recons de domínios e DNS é essa:
+ 
+ 1°- "WHOIS" para ver os registros do domínio(criador, registro/comprador,expiração,NS...)
+ 
+ 2°- "DIG" para o recon de DNS (A,AAAA,MX,NS,SOA,TXT, AXFR...)
+ 
+ Aprendizado: Como foi meu 1° contato com o "whois", ainda tem muita coisa para apreder, mas nada que muita prática e teoría não resolva.
+
 
