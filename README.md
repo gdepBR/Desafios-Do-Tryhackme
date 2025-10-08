@@ -56,4 +56,47 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
  
  Aprendizado: Como foi meu 1° contato com o "whois", ainda tem muita coisa para apreder, mas nada que muita prática e teoría não resolva.
 
+## 08/10/25
+
+ CFT/teoría: "Passive Reconnaissance"
+
+ Estudos: Reconhecimento passivo(sem contato direto com o alvo).
+
+ Objetivo: Entender como funciona o recon passivo e quais ferramentas usar.
+
+ ferramentas: "DIG", "WHOIS", "Shodan.io", "DNSDumpster"
+
+ Relato: Eu demorei 2 dias pra fazer este CTF teórico (não pela dificuldade,mas por falta de tempo).
+ 1- Foi a parte da introdução ( o CTF explicando o que iriamos usar e fazer).
+ 2- Explicando a diferença de recon passivo e ativo.
+
+   Passive Recon: Consiste em buscar infomações públicas do alvo (sites, subdomínios telefones, emails)
+   Ex: "Um atacante analizando a base inimiga de longe" (sem contato direto, ou seja, passive recon)
+   
+   Ferramentas: 
+   
+   1- "WHOIS": Ferramenta de consluta de domínio (não é de DNS). pega infos públicas de um site, por exemplo: NS, datas de criaão e expiração do site,              registros de quem comprou/ dono do site e quem é dono do endereço dele (URL).
+
+   2- "DNSDumpster" : Ferramenta de descoberta de subdomínios(infos públicas, porem escondidas) ex: admim.site.com, help.site.com (tudo antes do                "site.com" é um subdomínio).
+
+   3- "Shodan.io": Ferramnta de consulta de dispositivos na rede. ele tenta se conectar em um site e tenta pegar todas suas infos públicas.
+       Com isso ele descobre:
+       
+   .Endereço IP
+   .empresa de hospedagem
+   .localização geográfica
+   .tipo de servidor e versão
+
+   Active Recon: Consiste em buscar informações privadas de um alvo.
+   EX: "O atacante checando a fechadura da base inimiga. Se ela estiver fraca, pode ser uma possível falha ou vulnerabilidade"
+   
+   Ferramentas:
+   
+   1- "Nmap": chegando minusiosamente a fechadura, se diver algo aberto...
+
+   2- "Hydra": Essa fechadura está meio fraca... vou ver se consigo quebrar ela na força bruta.
+
+   Apredizado: Apredi um pouco sobre o "WHOIS", "Shodan.io" E DNSDmpster, asm acho que desses 3 aí, eu só vou usar o "WHOIS" e talvéz o DNSDumpster         (ainda não vejo muita funcionalidade pra eles no momento).
+   
+
 
