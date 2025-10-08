@@ -66,7 +66,6 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
 
  ferramentas: "DIG", "WHOIS", "Shodan.io", "DNSDumpster"
 
- Relato: Eu demorei 2 dias pra fazer este CTF teórico (não pela dificuldade,mas por falta de tempo).
  1- Foi a parte da introdução ( o CTF explicando o que iriamos usar e fazer).
  2- Explicando a diferença de recon passivo e ativo.
 
@@ -96,7 +95,9 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
 
    2- "Hydra": Essa fechadura está meio fraca... vou ver se consigo quebrar ela na força bruta.
 
-   Apredizado: Apredi um pouco sobre o "WHOIS", "Shodan.io" E DNSDmpster, asm acho que desses 3 aí, eu só vou usar o "WHOIS" e talvéz o DNSDumpster         (ainda não vejo muita funcionalidade pra eles no momento).
+   Apredizado: Aprendi um pouco sobre o "WHOIS", "Shodan.io" E DNSDmpster, asm acho que desses 3 aí, eu só vou usar o "WHOIS" e talvéz o DNSDumpster         (ainda não vejo muita funcionalidade pra eles no momento).
+
+   Relato: Eu demorei 2 dias pra fazer este CTF teórico (não pela dificuldade,mas por falta de tempo).
    
 
 
