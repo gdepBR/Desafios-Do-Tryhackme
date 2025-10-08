@@ -95,7 +95,7 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
 
    2- "Hydra": Essa fechadura está meio fraca... vou ver se consigo quebrar ela na força bruta.
 
-   Apredizado: Aprendi um pouco sobre o "WHOIS", "Shodan.io" E DNSDmpster, asm acho que desses 3 aí, eu só vou usar o "WHOIS" e talvéz o DNSDumpster         (ainda não vejo muita funcionalidade pra eles no momento).
+   Apredizado: Aprendi um pouco sobre o "WHOIS", "Shodan.io" E DNSDmpster, asm acho que desses 3 aí, eu só vou usar o "WHOIS" e talvéz o "DNSDumpster"      (ainda não vejo muita funcionalidade pra eles no momento).
 
    Relato: Eu demorei 2 dias pra fazer este CTF teórico (não pela dificuldade,mas por falta de tempo).
    
