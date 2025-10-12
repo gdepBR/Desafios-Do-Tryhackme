@@ -98,6 +98,55 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
    Apredizado: Aprendi um pouco sobre o "WHOIS", "Shodan.io" E DNSDmpster, asm acho que desses 3 aí, eu só vou usar o "WHOIS" e talvéz o "DNSDumpster"      (ainda não vejo muita funcionalidade pra eles no momento).
 
    Relato: Eu demorei 2 dias pra fazer este CTF teórico (não pela dificuldade,mas por falta de tempo).
+
+   ## 12/10/25
+
+   CTF/teória: "Active Reconnaissance"
+   
+   Estudos: reconhecimento ativo(contato direto com o alvo)
+   
+   Objetivo: entender como funciona o recon ativo e quando usar.
+
+   Ferramentas:Web browser(ferramenta do desenvolvedor),Netcat,Telnet,Ping e Traceroute.
+
+   1- introdução ao recon ativo. Explicando que recon ativo é interagir com o alvo diretamente (mandar pings,ver versões de servições, inpecionar           sites..).
+   
+   2-Web browser: Sua função é inspecionar o código fonte de um site (html,css e outras lingaguens)
+
+   3-Ping: testa a conexão do clinete(você) com o servidor (alvo) mandando pacotes e recebendo eles de volta atravez do servidor(alvo). 
+
+   4-Traceroute: mostra o caminha do cliente(você) até o servidor(alvo) mostrando todos os roteadores entre você e o servidor.
+   . Ele manda um pacote UDP com um TTL(tempo de vida) = 1, e a cada roteador que o UDP passa ele "morre". Então o roteador responde 
+   
+   atravez de uma mensagem de error de "Time Exceeded", ou seja, o TTL chegou a 0 e o roteador responde com o seu ip falando "tempo de vida exedido"
+   . o ICMP então fala: "o UDP morreu em "x" roteador. vou deixar marcado o local (1-)"
+
+   5- Telnet: comando usando para descobrir a versão de um serviço.
+   .O Telnet se coneacta a porta atravez do comando "telnet <ip> <porta>".
+   
+   .Após se conectar, o cliente(você) deverá usar esse comando para pegar a versão do serviço:
+   
+   GET / HTTP/1.1
+   host: telnet
+
+   Então só após isso, o cliente receberá as informações do serviço.
+
+   6-Netcat/nc: comando responável por iniciar um servidor e cliente, assim, formando um "túnel" entre você e o servidor.
+   . para ser o servidor,vocẽ dereva usar esse comando:
+   
+   nc -lkp <porta>
+   
+   .-l listar/escutar.
+   .-k não encerra a conexão após o cliente finalisar a conexão.
+   .-p expecifica a porta.
+
+   para o cliente e conectar, basta usar esse comando:
+
+   nc <ip do servidor/serviço> <porta>
+
+   Aprendizado: Começei a enteder mais sobre como pegar as vesões de serivdores/serviços.
+   acho que o mais útil nesses comando vai ser o Netcat mesmo.
+   
    
 
 
