@@ -136,9 +136,9 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
    
    nc -lkp <porta>
    
-   .-l listar/escutar.
-   .-k não encerra a conexão após o cliente finalisar a conexão.
-   .-p expecifica a porta.
+   -l listar/escutar.
+   -k não encerra a conexão após o cliente finalisar a conexão.
+   -p expecifica a porta.
 
    para o cliente e conectar, basta usar esse comando:
 
