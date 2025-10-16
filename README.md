@@ -146,6 +146,74 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
 
    Aprendizado: Começei a enteder mais sobre como pegar as vesões de serivdores/serviços.
    acho que o mais útil nesses comando vai ser o Netcat mesmo.
+
+   ## 16/10/25
+   
+   CTF/teórico: "Nmap Live Host Discovery"
+   
+   Objetivo: Apreder como funiona e quando usar cada flag no nmap.
+   
+   1- Apresenta as flags/tipos de scan que o nmap pode e onde fazer.
+   
+   2-Sub-rede: Uma sub-rede é uma rede privada dentro de outra rede privada.
+   
+   . Se sabe que é uma sub-rede por causa do Máscara (255.255.0.0) --> 192.168.<sub-rede> <ip>.
+   
+   . As sub-redes são conectas atravez do roteador.
+
+   3-Apresenta o conceito do prefixo(delimita om tamanho da rede)
+   .Mostra o comando "-iL" (usa um arquivo .txt com os ips alvo para serem scaneados)
+   ."-n" não faz a resolução DNS
+
+   4-Apresenta os tipos de scan e qual camada eles irão atuar ao serem executados.
+   Tipos de scan e suas camadas:
+   
+   .ARP  — Camada 2 (Enlace/Link);
+   .ICMP — Camada 3 (Rede);
+   .TCP  — Camada 4 (Transporte);
+   .UDP  — Camada 4 (Transporte).
+
+   5-Descoberta de Hosts:
+   ."-sn" = faz uma varedura completa na rede expecificada, ex:
+   ."nmap -sn 192.168.1.10/24" --> (/24 = prefixo, delimita o tamanho da rede)
+   
+   ."-PR": Utiliza o protocolo ARP(descoberta de MAC na rede). recomendado em rede privada, ex:
+   ."nmap -PR -sn 192.168.1.10/24" -->(Usa ARP para descopberta de hosts).
+
+   ."-PE": Utiliza ICMP para a descobertas de hosts (recomendado se for usar em redes externas), ex:
+   ."nmap -PE -sn 192.168.2.20/24"(Usa ICMP para a descoberta).
+
+   ."-PP": Utiliza timestamp(mostra data e hora reais em milesegundos, recomendado para calcular envio e recibo de pacotes), ex:
+   ."nmap -PP -sn 192.168.2.20/24".
+
+   ."-PM" Tenta descobrir hosts ativos com base na máscara de endereços ICMP(ICMP/17,18). ex:
+   ."nmap -PM -sn 192.168.2.20/24"(Utiliza ICMP/17,18)
+   
+   .17 = request (pergunta);
+   .18 = reply   (resposta).
+
+   ."-PS": Scan TCP (sem root = handshake compĺeto, sem = meio handshak/stealth), ex:
+   ."nmap -PA <porta> <ip>" .
+
+   ."-PA": Scan ACK, manda um ACK a um alvo e espera ele restornar um RST. Já que não teve uma conexão estabelecida antes o RST = confirma qu está ativo
+     indiretamente atravez de uma mensagem de error. ex:
+    
+   ."nmap -PA -sn <ip/24>"
+
+   ."-PU": Scan UDP, utiliza um pacote com endereço e porta de envio/destino para o alvo em uma porta alta/incomum. se retornar uma mensagem de error,
+     dignifica que o dispositivo está ativo. se não receber nada, significa que o pacote foi filtrado ou o host está inativo. ex:
+   
+   ."nmap -PU -sn <ip>/24"
+
+   ."-R": Consulta um DNS inverso para ver qual ip tem alguma relação com "x" domínio.
+   ."-n": Sem resolição DNS(sem converter o domínio para o ip).
+   ."--dns-servers DNS_SERVER": Expecifica o DNS a ser perguntado.
+
+   
+   
+   
+   
+
    
    
 
