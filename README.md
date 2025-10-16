@@ -209,6 +209,8 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
    ."-n": Sem resolição DNS(sem converter o domínio para o ip).
    ."--dns-servers DNS_SERVER": Expecifica o DNS a ser perguntado.
 
+   Aprendizado: Enteder um pouco mais em que situação usar cada flag do nmap.
+
    
    
    
