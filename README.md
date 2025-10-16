@@ -203,7 +203,7 @@ Recomendação: Recomendo para quem está se aventurando no mundo do DNS(simples
    ."-PU": Scan UDP, utiliza um pacote com endereço e porta de envio/destino para o alvo em uma porta alta/incomum. se retornar uma mensagem de error,
      dignifica que o dispositivo está ativo. se não receber nada, significa que o pacote foi filtrado ou o host está inativo. ex:
    
-   ."nmap -PU -sn <ip>/24"
+   ."nmap -PU -sn <ip/24>"
 
    ."-R": Consulta um DNS inverso para ver qual ip tem alguma relação com "x" domínio.
    ."-n": Sem resolição DNS(sem converter o domínio para o ip).
